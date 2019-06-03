@@ -92,7 +92,7 @@ a {
 	background-size: cover;
 	overflow: hidden;
 }
-.block_c1:hover, .block_2:hover {
+.block_c1:hover, .block_c2:hover {
 	opacity: 0.5;
 	transition: opacity 1s ease;	
 }

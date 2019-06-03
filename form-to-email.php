@@ -1,12 +1,11 @@
 <?php
 if(isset($_POST['email'])) {
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
+
     $email_to = "brandon.roberts@imatrix.com";
     $email_subject = "New Form Submission";
  
     function died($error) {
-        // your error code can go here
+        // Erro messages
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
@@ -15,7 +14,7 @@ if(isset($_POST['email'])) {
     }
  
  
-    // validation expected data exists
+    // validation 
     if(!isset($_POST['first_name']) ||
         !isset($_POST['last_name']) ||
         !isset($_POST['email']) ||
@@ -25,7 +24,7 @@ if(isset($_POST['email'])) {
     }
  
      
- 
+
     $first_name = $_POST['first_name']; // required
     $last_name = $_POST['last_name']; // required
     $email_from = $_POST['email']; // required
@@ -73,14 +72,12 @@ if(isset($_POST['email'])) {
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
  
-// create email headers
+// Email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
- 
-<!-- include your own success html here -->
  
 Thank you for contacting us. We will be in touch with you very soon.
  
