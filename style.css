@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	color: white;
+}
+/* LOGO */
+.logo_section {
+	background-color: #212120;
+}
+.header_logo {
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+}
+/* NAV */
+.nav_header {
+	background-color: #1a1918;
+	height: 50px;
+	border-bottom: solid #212120 5px;
+}
+.nav_items {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+.nav_items li {
+	display: inline-block;
+	margin: 0 auto;
+	color: white;
+	font-size: 16pt;
+	text-align: center;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+.nav_items li a:hover {
+	color: tan;
+}
+.nav_items li a {
+	text-decoration: none;
+	color: white;
+}
+
+/* BLOCK */
+.block_section {
+	background-color: #424141;
+	text-align: center;
+	background-image: url("images/block_texture.jpg");
+	background-position: bottom;
+	background-size: cover;
+	color: white;
+}
+.block_container {
+	width: 80%;
+	display: inline-block;
+	margin: 0 auto;
+}
+.block_c1, .block_c2 {
+	width: 49%;
+	background-color: white;
+	margin: 3% 0;
+	box-shadow: black 5px 5px 15px;
+	color: white;
+}
+.block0 {
+	width: 100%;
+	background-color: black;
+	margin: 3% 0;
+	box-shadow: black 5px 5px 15px;
+	color: white;
+	background-image: url("images/br_logo.png");
+	padding: 5% 5%;
+	background-position: center;
+	background-size: 130px 130px;
+	overflow: hidden;
+}
+.block_c1 {
+	float: left;
+	padding: 13% 5%;
+	background-image: url("images/thinking.png");
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+.block_c2 {
+	float: right;
+	padding: 13% 5%;
+	background-image: url("images/modified.png");
+	background-size: cover;
+	overflow: hidden;
+}
+.block_c1:hover, .block_2:hover {
+	opacity: 0.5;
+	transition: opacity 1s ease;	
+}
+
+.block_section h1 {
+	text-shadow: 3px 0 1px black;
+	font-size: 1.25em;
+}
+/* BODY */
+.body_section {
+	background-color: white;
+	height: 500px;
+}
+/* FOOTER */
+.footer_section {
+	background-color: #1a1918;
+	height: 100px;
+	border-top: solid #212120 5px;
+}
+/* PRE-LOAD ANIMATION */
+.preload {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: #212120;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.5s ease;
+}
+.preload-finish {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 1s ease;
+}
+.logo_preload {
+	height: 200px;
+	animation: logo_preload 1s ease infinite alternate;
+}
+.preload h3 {
+	position: absolute;
+	top: 75%;
+	transform: translateY(-75%);
+	color: white;
+	font-size: 40px;
+	font-family: forte, sans-serif;
+}
+section img {
+	height: 200px;
+}
+@keyframes logo_preload {
+	from {
+		transform: translateY(5px);
+	}
+	to {
+		transform: translateY(-378px);
+	}
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: -100px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  border: solid white 1px;
+}
+/* Dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: tan; 
+	color: black;
+}
+
+/* Dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+	opacity: 0.8;
+}
+.dropdown:hover .dropdown-content:hover {
+	display: block;
+}
