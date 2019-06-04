@@ -127,11 +127,11 @@ a {
 .preload-finish {
 	opacity: 0;
 	pointer-events: none;
-	transition: opacity 1s ease;
+	transition: opacity 2s ease;
 }
 .logo_preload {
 	height: 200px;
-	animation: logo_preload 1s ease infinite alternate;
+	animation: logo_preload 2s ease infinite alternate;
 }
 .preload h3 {
 	position: absolute;
