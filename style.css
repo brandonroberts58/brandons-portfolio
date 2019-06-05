@@ -311,8 +311,12 @@ section img {
 	}
 	.header_logo {
 		width: 100px;
+		padding-top: 10px;
 	}
 	.nav_items li {
     	padding: 0 5px;
+	}
+	section img {
+		height: 100px;
 	}
 }
