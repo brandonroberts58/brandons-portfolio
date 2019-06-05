@@ -316,7 +316,7 @@ section img {
 	.nav_items li {
     	padding: 0 5px;
 	}
-	section img {
+	.preload img {
 		height: 100px;
 	}
 }
