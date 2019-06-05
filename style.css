@@ -16,7 +16,7 @@ h1 {
 	padding: 10px 0;
 	background-color: black;
 	opacity: .8;
-	color: white;
+	color: white !important;
 	border-radius: 10px;
 }
 /* FORMS */
@@ -101,23 +101,19 @@ button {
 	background-position: bottom;
 	background-size: cover;
 	color: white;
+	padding-bottom: 20px;
 }
 .block_container {
 	width: 80%;
 	display: inline-block;
 	margin: 0 auto;
 }
-.block_c1, .block_c2, .block_c3, .block_calculator, .block_movie, .block_music, .block_weather {
+.block_c0, .block_c1, .block_c2, .block_c3, .block_calculator, .block_movie, .block_music, .block_weather {
 	width: 100%;
 	background-color: white;
-	margin: 3% 0;
+	margin: 1% 0;
 	box-shadow: black 5px 5px 15px;
 	color: black;
-}
-@media (min-width: 900px) {
-	.block_c1, .block_c2, .block_calculator, .block_movie, .block_music, .block_weather {
-		width: 49%;
-	}
 }
 .block0 {
 	width: 100%;
@@ -125,9 +121,16 @@ button {
 	margin: 3% 0;
 	box-shadow: black 5px 5px 15px;
 	color: white;
-	padding: 5% 5%;
+	padding: 1% 5%;
 	background-position: center;
 	background-size: 130px 130px;
+	overflow: hidden;
+}
+.block_c0 {
+	padding: 13% 5%;
+	background-image: url("images/thinking.png");
+	background-position: center;
+	background-size: cover;
 	overflow: hidden;
 }
 .block_c1 {
@@ -165,6 +168,7 @@ button {
 	padding: 13% 5%;
 	background-image: url("images/movie-app.png");
 	background-size: cover;
+	background-position: center;
 	overflow: hidden;
 }
 .block_music {
@@ -183,7 +187,7 @@ button {
 	background-position: center;
 	overflow: hidden;
 }
-.block_c1:hover, .block_c2:hover, .block_calculator:hover, .block_movie:hover, .block_music:hover, .block_weather:hover {
+.block_c0:hover, .block_c1:hover, .block_c2:hover, .block_calculator:hover, .block_movie:hover, .block_music:hover, .block_weather:hover {
 	opacity: 0.5;
 	transition: opacity 1s ease;	
 }
@@ -282,4 +286,24 @@ section img {
 }
 .dropdown:hover .dropdown-content:hover {
 	display: block;
+}
+/* MEDIA QUERIES */
+@media (min-width: 900px) {
+	.block_c1, .block_c2, .block_calculator, .block_movie, .block_music, .block_weather {
+		width: 49%;
+	}	
+}
+@media (max-width: 900px) {
+	.nav_items li {
+    font-size: 14pt !important;
+}
+input[type="text"] {
+    width: 90%;
+}
+textarea {
+    width: 90%;
+}
+button {
+    width: 50%;
+}
 }
