@@ -319,12 +319,13 @@ section img {
 	.preload img {
 		height: 100px !important;
 	}
-	.txt-wraps {
-		opacity: .5 !important;
-	}
 	#container {
     	width: 100% !important;
 	}
 	.block_container {
     	width: 90% !important;
+	}
+	.txt-wraps {
+	background-color: none;
+	}
 }
