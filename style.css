@@ -325,4 +325,7 @@ section img {
 	#container {
     	width: 100%;
 	}
+	.block_container {
+    	width: 90%;
+	}
 }
