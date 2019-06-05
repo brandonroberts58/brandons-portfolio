@@ -1,0 +1,39 @@
+.location, .temperature {
+	height: 30vh;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+}
+.temperature {
+	flex-direction: column;
+}
+.degree-section {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.degree-section span {
+	margin: 10px;
+	font-size: 30px;
+}
+.degree-section h2 {
+	font-size: 30px;
+}
+.header-navigation a {
+	text-decoration: none;
+	color: white;
+	margin: 10px 5px;
+	font-size: 15px;
+	font-weight: 900;
+	font-family: sans-serif;
+	text-align: center;
+	display: inline-block;
+}
+.header-navigation {
+	background-color: rgba(0,0, 0, 0.3);
+	width: 100%;
+	text-align: center;
+	height: 50px;
+}

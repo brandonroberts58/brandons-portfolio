@@ -6,6 +6,52 @@
 a {
 	color: white;
 }
+p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'PT Serif', serif;
+}
+h1 {
+	font-size: 20px !important;
+}
+.txt-wraps {
+	padding: 10px 0;
+	background-color: black;
+	opacity: .8;
+	color: white;
+	border-radius: 10px;
+}
+/* FORMS */
+input[type="text"] {
+    width: 50%;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 15px;
+    height: 2.5em;
+    padding: 10px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+textarea {
+    width: 50%;
+    margin: 10px auto;
+    display: inline-block;
+    float: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 900;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+button {
+    width: 20%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 900;
+    color: black;
+}
 /* LOGO */
 .logo_section {
 	background-color: #212120;
@@ -35,16 +81,19 @@ a {
 	text-align: center;
 	padding: 0 10px;
 	text-transform: uppercase;
+	font-family: 'PT Serif', serif;
+	font-weight: 900;
 }
-.nav_items li a:hover {
+.nav_items li a:hover, .hover_style:hover {
 	color: tan;
 }
 .nav_items li a {
 	text-decoration: none;
 	color: white;
+	font-weight: 900;
 }
 
-/* BLOCK */
+/* BLOCKS */
 .block_section {
 	background-color: #424141;
 	text-align: center;
@@ -58,12 +107,17 @@ a {
 	display: inline-block;
 	margin: 0 auto;
 }
-.block_c1, .block_c2 {
-	width: 49%;
+.block_c1, .block_c2, .block_c3, .block_calculator, .block_movie, .block_music, .block_weather {
+	width: 100%;
 	background-color: white;
 	margin: 3% 0;
 	box-shadow: black 5px 5px 15px;
-	color: white;
+	color: black;
+}
+@media (min-width: 900px) {
+	.block_c1, .block_c2, .block_calculator, .block_movie, .block_music, .block_weather {
+		width: 49%;
+	}
 }
 .block0 {
 	width: 100%;
@@ -71,7 +125,6 @@ a {
 	margin: 3% 0;
 	box-shadow: black 5px 5px 15px;
 	color: white;
-	background-image: url("images/br_logo.png");
 	padding: 5% 5%;
 	background-position: center;
 	background-size: 130px 130px;
@@ -92,7 +145,45 @@ a {
 	background-size: cover;
 	overflow: hidden;
 }
-.block_c1:hover, .block_c2:hover {
+.block_c3 {
+	float: right;
+	padding: 13% 5%;
+	background-image: url("images/modified.png");
+	background-size: cover;
+	overflow: hidden;
+}
+.block_calculator {
+	float: left;
+	padding: 13% 5%;
+	background-image: url("images/calculator-js.png");
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;	
+}
+.block_movie {
+	float: right;
+	padding: 13% 5%;
+	background-image: url("images/movie-app.png");
+	background-size: cover;
+	overflow: hidden;
+}
+.block_music {
+	float: left;
+	padding: 13% 5%;
+	background-image: url("images/music-app.png");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.block_weather {
+	float: right;
+	padding: 13% 5%;
+	background-image: url("images/weather-app.png");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.block_c1:hover, .block_c2:hover, .block_calculator:hover, .block_movie:hover, .block_music:hover, .block_weather:hover {
 	opacity: 0.5;
 	transition: opacity 1s ease;	
 }
@@ -175,8 +266,8 @@ section img {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-transform: uppercase;
   border: solid white 1px;
+  font-weight: 900;
 }
 /* Dropdown links on hover */
 .dropdown-content a:hover {

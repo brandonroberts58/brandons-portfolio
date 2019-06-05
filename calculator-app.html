@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="calculator-style.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
 		<title>My Portfolio</title>
 	</head>
@@ -29,22 +30,46 @@
   								</div>
 							</div>
 						<li>|</li>
-						<li><a href="">Contact</a></li>
+						<li><a href="contact.html">Contact</a></li>
 						<li>|</li>
 				</ul>
 		</section>
 		<section class="block_section">
 				<div class="block_container">
-					<div class="block0">
-							<h1>Contact</h1>
-					</div>
-						<form class="contact-form" action="form-to-email.php" method="post">
-								<input type="text" name="name" value="" placeholder="Full name">
-								<input type="text" name="email" value="" placeholder="Your e-mail">
-								<input type="text" name="phone" value="" placeholder="Your phone number">
-								<textarea name="message" placeholder="Your message"></textarea>
-								<button type="submit" name="submit">Send Mail</button>
-						</form>
+					<div id="container">
+							<div id="calculator">
+								<div id="result">
+									<div id="history">
+										<p id="history-value"></p>
+									</div>
+									<div id="output">
+										<p id="output-value"></p>
+									</div>
+								</div>
+								<div id="keyboard">
+									<button class="operator" id="clear">C</button>
+									<button class="operator" id="backspace">CE</button>
+									<button class="operator" id="%">%</button>
+									<button class="operator" id="/">&#247;</button>
+									<button class="number" id="7">7</button>
+									<button class="number" id="8">8</button>
+									<button class="number" id="9">9</button>
+									<button class="operator" id="*">&times;</button>
+									<button class="number" id="4">4</button>
+									<button class="number" id="5">5</button>
+									<button class="number" id="6">6</button>
+									<button class="operator" id="-">-</button>
+									<button class="number" id="1">1</button>
+									<button class="number" id="2">2</button>
+									<button class="number" id="3">3</button>
+									<button class="operator" id="+">+</button>
+									<button class="empty" id="empty"></button>
+									<button class="number" id="0">0</button>
+									<button class="empty" id="empty"></button>
+									<button class="operator" id="=">=</button>
+								</div>
+							</div>
+						</div>
 				</div>
 		</section>
 
@@ -64,5 +89,6 @@
 			<h3>Loading...</h3>
 		</div>
 		<script src="main.js"></script>
+		<script src="calculator-script.js"></script>
 	</body>
 </html>

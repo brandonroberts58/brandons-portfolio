@@ -1,4 +1,4 @@
-//Need to make function that gets rid of preloader
+//Ends preloader when page is loaded
 window.addEventListener('load', () => {
     const preload = document.querySelector('.preload');
     preload.classList.add('preload-finish') ;

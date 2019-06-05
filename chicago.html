@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="weather-style.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
 		<title>My Portfolio</title>
 	</head>
@@ -29,23 +30,28 @@
   								</div>
 							</div>
 						<li>|</li>
-						<li><a href="">Contact</a></li>
+						<li><a href="contact.html">Contact</a></li>
 						<li>|</li>
 				</ul>
 		</section>
 		<section class="block_section">
-				<div class="block_container">
-					<div class="block0">
-							<h1>Contact</h1>
-					</div>
-						<form class="contact-form" action="form-to-email.php" method="post">
-								<input type="text" name="name" value="" placeholder="Full name">
-								<input type="text" name="email" value="" placeholder="Your e-mail">
-								<input type="text" name="phone" value="" placeholder="Your phone number">
-								<textarea name="message" placeholder="Your message"></textarea>
-								<button type="submit" name="submit">Send Mail</button>
-						</form>
-				</div>
+	<body>
+		<div class="header-navigation">
+		<a href="weather-app.html">- Current Location</a>
+		<a href="new_york.html">- New York -</a>
+		<a href="chicago.html">Chicago -</a>
+		</div>
+		<div class="location">
+			<h1 class="location-timezone">Timezone</h1>
+			<canvas class="icon" width="128" height="128"></canvas>
+		</div>
+		<div class="temperature">
+			<div class="degree-section">
+				<h2 class="temperature-degree">0</h2>
+				<span>F</span>
+			</div>
+			<div class="temperature-description">Please allow browser to track your location.</div>
+		</div>
 		</section>
 
 		<section class="footer_section">
@@ -64,5 +70,8 @@
 			<h3>Loading...</h3>
 		</div>
 		<script src="main.js"></script>
+		<script src="skycons.js"></script>
+		<script src="weather-app.js"></script>
+		<script src="chs_app.js"></script>
 	</body>
 </html>
