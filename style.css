@@ -325,9 +325,6 @@ section img {
 	.block_container {
     	width: 90% !important;
 	}
-	.txt-wraps {
-		background-color: none;
-	}
 	.logo_preload {
 		animation: logo_preload 1s ease infinite alternate;
 	}
