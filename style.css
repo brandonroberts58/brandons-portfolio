@@ -326,6 +326,6 @@ section img {
     	width: 90% !important;
 	}
 	.logo_preload {
-		animation: logo_preload 1s ease infinite alternate;
+		animation: logo_preload 3s ease infinite alternate;
 	}
 }
