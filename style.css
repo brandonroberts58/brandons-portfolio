@@ -295,15 +295,24 @@ section img {
 }
 @media (max-width: 900px) {
 	.nav_items li {
-    font-size: 14pt !important;
-}
-input[type="text"] {
-    width: 90%;
-}
-textarea {
-    width: 90%;
-}
-button {
-    width: 50%;
-}
+    	font-size: 14pt !important;
+	}
+	input[type="text"] {
+    	width: 90%;
+	}
+	textarea {
+    	width: 90%;
+	}
+	button {
+    	width: 50%;
+	}
+	.block_c0, .block_c1, .block_c2, .block_c3, .block_calculator, .block_movie, .block_music, .block_weather {
+		margin: 3% 0;
+	}
+	.header_logo {
+		width: 100px;
+	}
+	.nav_items li {
+    	padding: 0 5px;
+	}
 }
