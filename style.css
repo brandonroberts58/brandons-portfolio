@@ -317,15 +317,14 @@ section img {
     	padding: 0 5px;
 	}
 	.preload img {
-		height: 100px;
+		height: 100px !important;
 	}
 	.txt-wraps {
-		opacity: .5;
+		opacity: .5 !important;
 	}
 	#container {
-    	width: 100%;
+    	width: 100% !important;
 	}
 	.block_container {
-    	width: 90%;
-	}
+    	width: 90% !important;
 }
