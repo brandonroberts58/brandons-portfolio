@@ -319,4 +319,10 @@ section img {
 	.preload img {
 		height: 100px;
 	}
+	.txt-wraps {
+		opacity: .5;
+	}
+	#container {
+    	width: 100%;
+	}
 }
