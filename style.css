@@ -5,6 +5,7 @@
 }
 a {
 	color: white;
+	text-decoration: none;
 }
 p, h1, h2, h3, h4, h5, h6 {
 	font-family: 'PT Serif', serif;
@@ -132,6 +133,7 @@ button {
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
+	text-decoration: none;
 }
 .block_c1 {
 	float: left;
