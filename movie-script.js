@@ -36,7 +36,7 @@ $(document).ready(() => {
 	function getMovie() {
 		let movieId = sessionStorage.getItem('movieId');
 
-		axios.get('http://www.omdbapi.com/?i='+movieId+'&apikey=ca894017')
+		axios.get('https://www.omdbapi.com/?i='+movieId+'&apikey=cc7cd989')
 		.then((response) => {
 			console.log(response);
 			let movie = response.data;
