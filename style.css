@@ -14,11 +14,16 @@ h1 {
 	font-size: 20px !important;
 }
 .txt-wraps {
-	padding: 10px 0;
-	background-color: black;
+	padding: 5px 10px;
 	opacity: .8;
 	color: white !important;
 	border-radius: 10px;
+	position: absolute;
+	padding: 4% 0 0 0;
+}
+.txt-wraps h1 {
+	font-size: 30px !important;
+	text-shadow: 115px 15px 15px black;
 }
 /* FORMS */
 input[type="text"] {
@@ -86,7 +91,7 @@ button {
 	font-weight: 900;
 }
 .nav_items li a:hover, .hover_style:hover {
-	color: tan;
+	color: #EBC127;
 }
 .nav_items li a {
 	text-decoration: none;
@@ -98,7 +103,7 @@ button {
 .block_section {
 	background-color: #424141;
 	text-align: center;
-	background-image: url("images/block_texture.jpg");
+	background-image: url("images/block_texture2.jpg");
 	background-position: bottom;
 	background-size: cover;
 	color: white;
@@ -128,16 +133,16 @@ button {
 	overflow: hidden;
 }
 .block_c0 {
-	padding: 13% 5%;
-	background-image: url("images/thinking.png");
-	background-position: center;
-	background-size: cover;
+	padding: 20% 5%;
+	background-image: url("images/website_design.png");
+	background-position: cover;
+	background-size: 100% 100%;
 	overflow: hidden;
 	text-decoration: none;
 }
 .block_c1 {
 	float: left;
-	padding: 13% 5%;
+	padding: 20% 5%;
 	background-image: url("images/thinking.png");
 	background-position: center;
 	background-size: cover;
@@ -145,7 +150,7 @@ button {
 }
 .block_c2 {
 	float: right;
-	padding: 13% 5%;
+	padding: 20% 5%;
 	background-image: url("images/modified.png");
 	background-size: cover;
 	overflow: hidden;
@@ -195,7 +200,7 @@ button {
 }
 
 .block_section h1 {
-	text-shadow: 3px 0 1px black;
+	text-shadow: 3px 2px 2px black;
 	font-size: 1.25em;
 }
 /* BODY */
@@ -277,7 +282,7 @@ section img {
 }
 /* Dropdown links on hover */
 .dropdown-content a:hover {
-	background-color: tan; 
+	background-color: #EBC127; 
 	color: black;
 }
 
